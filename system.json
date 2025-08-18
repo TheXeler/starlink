@@ -5,6 +5,7 @@
   "version": "alpha-build8",
   "url": "https://gitee.com/thexeler/starlink/",
   "manifest": "https://gitee.com/thexeler/starlink/raw/main/system.json",
+  "download": "https://gitee.com/thexeler/starlink/raw/main/update.zip",
   "esmodules": [
     "module/starlink.mjs"
   ],
