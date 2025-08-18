@@ -12,7 +12,7 @@ const {
     StringField
 } = foundry.data.fields;
 
-export default class CharacterDataModel {
+export default class CharacterDataModel extends foundry.abstract.DataModel {
     /** @inheritdoc */
     static defineSchema() {
         const fields = foundry.data.fields;

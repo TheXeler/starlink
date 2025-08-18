@@ -2,8 +2,8 @@ import Ship from "./actor/ship.mjs";
 import Character from "./actor/character.mjs"
 
 export const actor = {
-    "ship": Ship,
-    "character": Character
+    "starlink.Ship": Ship,
+    "starlink.Character": Character
 };
 
 export const item = {}
