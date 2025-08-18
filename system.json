@@ -76,5 +76,7 @@
       "type": "Macro",
       "system": "starlink"
     }
-  ]
+  ],
+  "primaryTokenAttribute": "attributes.hull",
+  "secondaryTokenAttribute": "attributes.shield"
 }

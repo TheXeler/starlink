@@ -1,13 +1,30 @@
 {
-  "SHIP": {
-    "HullPoints": "船体值",
-    "PowerPoints": "动力值",
-    "BaseSpeed": "基础速度",
-    "CargoCapacity": "基础容量",
-    "MaxComponents": "组件槽上限",
-    "UsedComponents": "已用槽位",
-    "InstalledComponents": "已安装组件",
-    "DamagedStatus": "受损状态",
-    "ShieldsPoints": "护盾值"
+  "STARLINK.SHIP": {
+    "HullPoints": {
+      "label": "船体值",
+      "hint": "表示船体能够承受的伤害值"
+    },
+    "ShieldsPoints": {
+      "label": "护盾值",
+      "hint": "表示护盾能够承受的伤害值"
+    },
+    "Speed": {
+      "label": "速度",
+      "hint": "表示飞船的速度"
+    },
+    "CargoCapacity": {
+      "label": "基础容量",
+      "hint": "表示飞船能够承载的最大货物量"
+    },
+    "ComponentsSlots": {
+      "MaxComponents": {
+        "label": "组件槽上限",
+        "hint": "表示飞船能够承载的最大组件数量"
+      },
+      "UsedComponents": {
+        "label": "已用槽位",
+        "hint": "表示飞船已经安装的组件数量"
+      }
+    }
   }
 }
