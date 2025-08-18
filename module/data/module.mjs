@@ -5,3 +5,7 @@ export const actor = {
     Ship,
     Character
 };
+
+export const item = {
+
+}

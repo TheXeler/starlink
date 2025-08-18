@@ -2,7 +2,7 @@ import STARLINK from "./config.mjs"
 
 import * as sheets from "./sheet/module.mjs"
 import * as dataModels from "./data/module.mjs"
-import {registerModuleData} from "./utils/module-registration.mjs";
+import {registerModuleData} from "./utils.mjs";
 
 globalThis.starlink = {
     config: STARLINK,
@@ -17,8 +17,10 @@ Hooks.once("init", function () {
     registerModuleData();
 
     CONFIG.Actor.dataModels = dataModels.actor;
+    CONFIG.Item.dataModels = dataModels.item;
 
     const DocumentSheetConfig = foundry.applications.apps.DocumentSheetConfig;
+    DocumentSheetConfig.unregisterSheet(Actor, "core", foundry.appv1.sheets.ActorSheet);
     DocumentSheetConfig.registerSheet(Actor, "starlink", sheets.Ship, {
         types: ["ship"],
         makeDefault: true,
@@ -29,4 +31,6 @@ Hooks.once("init", function () {
         makeDefault: true,
         label: "STARLINK.Sheet.Character"
     });
+
+
 })
