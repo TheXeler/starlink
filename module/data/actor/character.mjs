@@ -27,29 +27,29 @@ export default class CharacterDataModel {
                     initial: 10,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.CHARACTER.Health.Label",
-                    hint: "STARLINK.CHARACTER.Health.Hint"
+                    label: "STARLINK.Character.HealthPoints.Label",
+                    hint: "STARLINK.Character.HealthPoints.Hint"
                 }),
                 strength: new fields.NumberField({
                     initial: 1,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.CHARACTER.Strength.Label",
-                    hint: "STARLINK.CHARACTER.Strength.Hint"
+                    label: "STARLINK.Character.Strength.Label",
+                    hint: "STARLINK.Character.Strength.Hint"
                 }),
                 dexterity: new fields.NumberField({
                     initial: 1,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.CHARACTER.Dexterity.Label",
-                    hint: "STARLINK.CHARACTER.Dexterity.Hint"
+                    label: "STARLINK.Character.Dexterity.Label",
+                    hint: "STARLINK.Character.Dexterity.Hint"
                 }),
                 constitution: new fields.NumberField({
                     initial: 1,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.CHARACTER.Constitution.Label",
-                    hint: "STARLINK.CHARACTER.Constitution.Hint"
+                    label: "STARLINK.Character.Constitution.Label",
+                    hint: "STARLINK.Character.Constitution.Hint"
                 })
             }),
 
@@ -58,20 +58,20 @@ export default class CharacterDataModel {
                 new fields.SchemaField({
                     name: new fields.StringField({
                         initial: "",
-                        label: "STARLINK.CHARACTER.Skill.Name.Label",
-                        hint: "STARLINK.CHARACTER.Skill.Name.Hint"
+                        label: "STARLINK.Character.Skill.Name.Label",
+                        hint: "STARLINK.Character.Skill.Name.Hint"
                     }),
                     value: new fields.NumberField({
                         initial: 0,
                         integer: true,
                         min: 0,
-                        label: "STARLINK.CHARACTER.Skill.Value.Label",
-                        hint: "STARLINK.CHARACTER.Skill.Value.Hint"
+                        label: "STARLINK.Character.Skill.Value.Label",
+                        hint: "STARLINK.Character.Skill.Value.Hint"
                     })
                 }),
                 {
-                    label: "STARLINK.CHARACTER.Skills.Label",
-                    hint: "STARLINK.CHARACTER.Skills.Hint"
+                    label: "STARLINK.Character.Skills.Label",
+                    hint: "STARLINK.Character.Skills.Hint"
                 }
             ),
 
@@ -81,15 +81,15 @@ export default class CharacterDataModel {
                     initial: 3,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.CHARACTER.SkillSlots.Max.Label",
-                    hint: "STARLINK.CHARACTER.SkillSlots.Max.Hint"
+                    label: "STARLINK.Character.SkillSlots.Max.Label",
+                    hint: "STARLINK.Character.SkillSlots.Max.Hint"
                 }),
                 used: new fields.NumberField({
                     initial: 0,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.CHARACTER.SkillSlots.Used.Label",
-                    hint: "STARLINK.CHARACTER.SkillSlots.Used.Hint"
+                    label: "STARLINK.Character.SkillSlots.Used.Label",
+                    hint: "STARLINK.Character.SkillSlots.Used.Hint"
                 })
             })
         };

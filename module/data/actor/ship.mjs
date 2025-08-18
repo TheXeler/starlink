@@ -27,29 +27,29 @@ export default class StarshipDataModel extends foundry.abstract.DataModel {
                     initial: 10,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.SHIP.HealthPoints.Label",
-                    hint: "STARLINK.SHIP.HealthPoints.Hint"
+                    label: "STARLINK.Ship.HealthPoints.Label",
+                    hint: "STARLINK.Ship.HealthPoints.Hint"
                 }),
                 shield: new fields.NumberField({
                     initial: 5,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.SHIP.ShieldPoints.Label",
-                    hint: "STARLINK.SHIP.ShieldPoints.Hint"
+                    label: "STARLINK.Ship.ShieldPoints.Label",
+                    hint: "STARLINK.Ship.ShieldPoints.Hint"
                 }),
                 speed: new fields.NumberField({
                     initial: 1,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.SHIP.Speed.Label",
-                    hint: "STARLINK.SHIP.Speed.Hint"
+                    label: "STARLINK.Ship.Speed.Label",
+                    hint: "STARLINK.Ship.Speed.Hint"
                 }),
                 capacity: new fields.NumberField({
                     initial: 20,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.SHIP.CargoCapacity.Label",
-                    hint: "STARLINK.SHIP.CargoCapacity.Hint"
+                    label: "STARLINK.Ship.CargoCapacity.Label",
+                    hint: "STARLINK.Ship.CargoCapacity.Hint"
                 })
             }),
 
@@ -59,15 +59,15 @@ export default class StarshipDataModel extends foundry.abstract.DataModel {
                     initial: 3,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.SHIP.ComponentSlots.Max.Label",
-                    hint: "STARLINK.SHIP.ComponentSlots.Max.Hint"
+                    label: "STARLINK.Ship.ComponentSlots.Max.Label",
+                    hint: "STARLINK.Ship.ComponentSlots.Max.Hint"
                 }),
                 used: new fields.NumberField({
                     initial: 0,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.SHIP.UsedComponents.Label",
-                    hint: "STARLINK.SHIP.UsedComponents.Hint"
+                    label: "STARLINK.Ship.UsedComponents.Label",
+                    hint: "STARLINK.Ship.UsedComponents.Hint"
                 })
             })
         };

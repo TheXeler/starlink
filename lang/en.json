@@ -1,83 +1,92 @@
 {
   "TYPES": {
     "Actor": {
-      "ship": "Ship",
-      "character": "Character"
+      "Ship": "Ship",
+      "Character": "Character"
     },
     "Item": {
-      "component": "Component",
-      "planet": "Planet",
-      "building": "Building"
+      "Component": "Component",
+      "Planet": "Planet",
+      "Building": "Building"
     }
   },
-  "STARLINK.SHIP": {
-    "HealthPoints": {
-      "label": "Hull Points",
-      "hint": "Indicates how much damage the hull can withstand"
-    },
-    "ShieldsPoints": {
-      "label": "Shield Points",
-      "hint": "Indicates how much damage the shields can withstand"
-    },
-    "Speed": {
-      "label": "Speed",
-      "hint": "Indicates the speed of the ship"
-    },
-    "CargoCapacity": {
-      "label": "Cargo Capacity",
-      "hint": "Indicates the maximum amount of cargo the ship can hold"
-    },
-    "ComponentsSlots": {
-      "MaxComponents": {
-        "label": "Max Components",
-        "hint": "Indicates the maximum amount of components the ship can hold"
+  "STARLINK": {
+    "Ship": {
+      "HealthPoints": {
+        "label": "Hull Points",
+        "hint": "Indicates how much damage the hull can withstand"
       },
-      "UsedComponents": {
-        "label": "Used Components",
-        "hint": "Indicates the amount of components the ship has installed"
-      }
-    }
-  },
-  "STARLINK.CHARACTER": {
-    "Health": {
-      "label": "Health",
-      "hint": "Indicates the character's health points"
-    },
-    "Strength": {
-      "label": "Strength",
-      "hint": "Indicates the character's strength attribute"
-    },
-    "Dexterity": {
-      "label": "Dexterity",
-      "hint": "Indicates the character's dexterity attribute"
-    },
-    "Constitution": {
-      "label": "Constitution",
-      "hint": "Indicates the character's constitution attribute"
-    },
-    "Skills": {
-      "label": "Skills",
-      "hint": "List of skills the character has mastered"
-    },
-    "Skill": {
-      "Name": {
-        "label": "Skill Name",
-        "hint": "The name of the skill"
+      "ShieldsPoints": {
+        "label": "Shield Points",
+        "hint": "Indicates how much damage the shields can withstand"
       },
-      "Value": {
-        "label": "Skill Value",
-        "hint": "The value of the skill"
+      "Speed": {
+        "label": "Speed",
+        "hint": "Indicates the speed of the ship"
+      },
+      "CargoCapacity": {
+        "label": "Cargo Capacity",
+        "hint": "Indicates the maximum amount of cargo the ship can hold"
+      },
+      "ComponentsSlots": {
+        "MaxComponents": {
+          "label": "Max Components",
+          "hint": "Indicates the maximum amount of components the ship can hold"
+        },
+        "UsedComponents": {
+          "label": "Used Components",
+          "hint": "Indicates the amount of components the ship has installed"
+        }
       }
     },
-    "SkillSlots": {
-      "Max": {
-        "label": "Skill Slot Limit",
-        "hint": "Indicates the maximum number of skills the character can master"
+    "Character": {
+      "HealthPoints": {
+        "label": "Health",
+        "hint": "Indicates the character's health points"
       },
-      "Used": {
-        "label": "Used Skill Slots",
-        "hint": "Indicates the number of skills the character has already mastered"
+      "Strength": {
+        "label": "Strength",
+        "hint": "Indicates the character's strength attribute"
+      },
+      "Dexterity": {
+        "label": "Dexterity",
+        "hint": "Indicates the character's dexterity attribute"
+      },
+      "Constitution": {
+        "label": "Constitution",
+        "hint": "Indicates the character's constitution attribute"
+      },
+      "Skills": {
+        "label": "Skills",
+        "hint": "List of skills the character has mastered"
+      },
+      "Skill": {
+        "Name": {
+          "label": "Skill Name",
+          "hint": "The name of the skill"
+        },
+        "Value": {
+          "label": "Skill Value",
+          "hint": "The value of the skill"
+        }
+      },
+      "SkillSlots": {
+        "Max": {
+          "label": "Skill Slot Limit",
+          "hint": "Indicates the maximum number of skills the character can master"
+        },
+        "Used": {
+          "label": "Used Skill Slots",
+          "hint": "Indicates the number of skills the character has already mastered"
+        }
       }
+    },
+    "Sheet": {
+      "Ship": "Default ship sheet",
+      "Character": "Default character sheet",
+      "Component": "Default component sheet",
+      "Planet": "Default planet sheet",
+      "Building": "Default building sheet"
     }
   }
 }
