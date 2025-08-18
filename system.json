@@ -77,6 +77,6 @@
       "system": "starlink"
     }
   ],
-  "primaryTokenAttribute": "attributes.hull",
+  "primaryTokenAttribute": "attributes.health",
   "secondaryTokenAttribute": "attributes.shield"
 }

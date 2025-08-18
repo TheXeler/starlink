@@ -23,12 +23,12 @@ export default class StarshipDataModel extends foundry.abstract.DataModel {
 
             // 飞船特有属性
             attributes: new fields.SchemaField({
-                hull: new fields.NumberField({
+                health: new fields.NumberField({
                     initial: 10,
                     integer: true,
                     min: 0,
-                    label: "STARLINK.SHIP.HullPoints.Label",
-                    hint: "STARLINK.SHIP.HullPoints.Hint"
+                    label: "STARLINK.SHIP.HealthPoints.Label",
+                    hint: "STARLINK.SHIP.HealthPoints.Hint"
                 }),
                 shield: new fields.NumberField({
                     initial: 5,

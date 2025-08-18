@@ -1,6 +1,6 @@
 {
   "STARLINK.SHIP": {
-    "HullPoints": {
+    "HealthPoints": {
       "label": "船体值",
       "hint": "表示船体能够承受的伤害值"
     },

@@ -1,6 +1,6 @@
 {
   "STARLINK.SHIP": {
-    "HullPoints": {
+    "HealthPoints": {
       "label": "Hull Points",
       "hint": "Indicates how much damage the hull can withstand"
     },
