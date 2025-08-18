@@ -1,0 +1,13 @@
+{
+  "SHIP": {
+    "HullPoints": "船体值",
+    "PowerPoints": "动力值",
+    "BaseSpeed": "基础速度",
+    "CargoCapacity": "基础容量",
+    "MaxComponents": "组件槽上限",
+    "UsedComponents": "已用槽位",
+    "InstalledComponents": "已安装组件",
+    "DamagedStatus": "受损状态",
+    "ShieldsPoints": "护盾值"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "SHIP": {
+    "HullPoints": "Hull Points",
+    "PowerPoints": "Power Points",
+    "BaseSpeed": "Base Speed",
+    "CargoCapacity": "Cargo Capacity",
+    "MaxComponents": "Max Components",
+    "UsedComponents": "Used Components",
+    "InstalledComponents": "Installed Components",
+    "DamagedStatus": "Damaged",
+    "ShieldsPoints": "Shields Points"
+  }
+}

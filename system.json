@@ -1,0 +1,69 @@
+{
+  "id": "starlink",
+  "title": "Starlink",
+  "description": "A futuristic sci-fi style board game rule, highly customizable.",
+  "version": "1.0.0",
+  "esmodules": [
+    "modules/starlink.mjs"
+  ],
+  "styles": [
+    "styles/starlink.css"
+  ],
+  "compatibility": {
+    "verified": 13
+  },
+  "authors": [
+    {
+      "name": "TheXeler",
+      "url": "https://github.com/TheXeler"
+    }
+  ],
+  "documentTypes":{
+    "Actor": {
+      "ship": {
+        "htmlFields": []
+      },
+      "component": {
+        "htmlFields": []
+      },
+      "planet":{
+        "htmlFields": []
+      },
+      "building":{
+        "htmlFields": []
+      }
+    }
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "cn",
+      "name": "Chinese",
+      "path": "lang/cn.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "ships",
+      "label": "Ships",
+      "type": "Actor",
+      "system": "starlink"
+    },
+    {
+      "name": "components",
+      "label": "Components",
+      "type": "Item",
+      "system": "starlink"
+    },
+    {
+      "name": "libs",
+      "label": "Libs",
+      "type": "Macro",
+      "system": "starlink"
+    }
+  ]
+}
