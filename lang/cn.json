@@ -26,5 +26,47 @@
         "hint": "表示飞船已经安装的组件数量"
       }
     }
+  },
+  "STARLINK.CHARACTER": {
+    "Health": {
+      "label": "生命值",
+      "hint": "表示角色的生命值"
+    },
+    "Strength": {
+      "label": "力量",
+      "hint": "表示角色的力量属性"
+    },
+    "Dexterity": {
+      "label": "灵巧",
+      "hint": "表示角色的灵巧属性"
+    },
+    "Constitution": {
+      "label": "体质",
+      "hint": "表示角色的体质属性"
+    },
+    "Skills": {
+      "label": "技能表",
+      "hint": "角色掌握的技能列表"
+    },
+    "Skill": {
+      "Name": {
+        "label": "技能名称",
+        "hint": "技能的名称"
+      },
+      "Value": {
+        "label": "技能值",
+        "hint": "技能的数值"
+      }
+    },
+    "SkillSlots": {
+      "Max": {
+        "label": "技能槽上限",
+        "hint": "表示角色能够掌握的最大技能数量"
+      },
+      "Used": {
+        "label": "已用技能槽",
+        "hint": "表示角色已经掌握的技能数量"
+      }
+    }
   }
 }
