@@ -3,6 +3,8 @@
   "title": "Starlink",
   "description": "A futuristic sci-fi style board game rule, highly customizable.",
   "version": "1.0.0-build1",
+  "url": "https://gitee.com/thexeler/starlink/",
+  "manifest": "https://gitee.com/thexeler/starlink/blob/main/system.json",
   "esmodules": [
     "modules/starlink.mjs"
   ],
