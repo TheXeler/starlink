@@ -2,7 +2,7 @@
   "id": "starlink",
   "title": "Starlink",
   "description": "A futuristic sci-fi style board game rule, highly customizable.",
-  "version": "alpha-build6",
+  "version": "alpha-build7",
   "url": "https://gitee.com/thexeler/starlink/",
   "manifest": "https://gitee.com/thexeler/starlink/raw/main/system.json",
   "esmodules": [
@@ -56,25 +56,25 @@
   "packs": [
     {
       "name": "ships",
-      "label": "Ships",
+      "label": "TYPES.Actor.Ships",
       "type": "Actor",
       "system": "starlink"
     },
     {
-      "name": "characters",
-      "label": "Characters",
-      "type": "Actor",
+      "name": "buildings",
+      "label": "TYPES.Item.Buildings",
+      "type": "Item",
       "system": "starlink"
     },
     {
       "name": "components",
-      "label": "Components",
+      "label": "TYPES.Item.Components",
       "type": "Item",
       "system": "starlink"
     },
     {
       "name": "libs",
-      "label": "Libs",
+      "label": "TYPES.Other.Libs",
       "type": "Macro",
       "system": "starlink"
     }

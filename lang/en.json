@@ -2,12 +2,21 @@
   "TYPES": {
     "Actor": {
       "Ship": "Ship",
-      "Character": "Character"
+      "Ships": "Ships",
+      "Character": "Character",
+      "Characters": "Characters"
     },
     "Item": {
       "Component": "Component",
+      "Components": "Components",
       "Planet": "Planet",
-      "Building": "Building"
+      "Planets": "Planets",
+      "Building": "Building",
+      "Buildings": "Buildings"
+    },
+    "Other": {
+      "Lib": "MacroLib",
+      "Libs": "MacroLibs"
     }
   },
   "STARLINK": {
