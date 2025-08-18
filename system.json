@@ -2,7 +2,7 @@
   "id": "starlink",
   "title": "Starlink",
   "description": "A futuristic sci-fi style board game rule, highly customizable.",
-  "version": "alpha-build12",
+  "version": "alpha-build13",
   "url": "https://gitee.com/thexeler/starlink/",
   "manifest": "https://gitee.com/thexeler/starlink/raw/main/system.json",
   "download": "https://gitee.com/thexeler/starlink/raw/main/update.zip",
