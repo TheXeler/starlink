@@ -4,7 +4,7 @@
   "description": "A futuristic sci-fi style board game rule, highly customizable.",
   "version": "alpha-build2",
   "url": "https://gitee.com/thexeler/starlink/",
-  "manifest": "https://gitee.com/thexeler/starlink/blob/main/system.json",
+  "manifest": "https://gitee.com/thexeler/starlink/raw/main/system.json",
   "esmodules": [
     "modules/starlink.mjs"
   ],
