@@ -2,7 +2,7 @@
   "id": "starlink",
   "title": "Starlink",
   "description": "A futuristic sci-fi style board game rule, highly customizable.",
-  "version": "1.0.0",
+  "version": "1.0.0-build1",
   "esmodules": [
     "modules/starlink.mjs"
   ],
