@@ -1,6 +1,6 @@
 export default class CharacterSheet extends ActorSheetV2 {
     get template() {
-        return `modules/starlink/templates/actor/character-sheet-${this.isEditable ? "edit" : "view"}.html`;
+        return `templates/sheet-actor-character-${this.isEditable ? "editor" : "view"}.html`;
     }
 
     async getData(options = {}) {

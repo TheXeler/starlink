@@ -1,6 +1,6 @@
 export default class StarshipSheet extends ActorSheetV2 {
     get template() {
-        return `modules/starlink/templates/actor/ship-sheet-${this.isEditable ? "edit" : "view"}.html`;
+        return `templates/sheet-actor-ship-${this.isEditable ? "editor" : "view"}.html`;
     }
 
     async getData(options = {}) {
