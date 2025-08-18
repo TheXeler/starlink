@@ -23,6 +23,11 @@
       "ship": {
         "htmlFields": []
       },
+      "character": {
+        "htmlFields": []
+      }
+    },
+    "Item": {
       "component": {
         "htmlFields": []
       },
@@ -50,6 +55,12 @@
     {
       "name": "ships",
       "label": "Ships",
+      "type": "Actor",
+      "system": "starlink"
+    },
+    {
+      "name": "characters",
+      "label": "Characters",
       "type": "Actor",
       "system": "starlink"
     },
