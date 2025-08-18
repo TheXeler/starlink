@@ -1,12 +1,12 @@
 import STARLINK from "./config.mjs"
 
 import * as sheets from "./sheet/module.mjs"
-import * as data from "./data/module.mjs"
+import * as dataModels from "./data/module.mjs"
 import {registerModuleData} from "./utils/module-registration.mjs";
 
 globalThis.starlink = {
     config: STARLINK,
-    data: data
+    dataModels: dataModels
 }
 
 Hooks.once("init", function () {
@@ -15,6 +15,8 @@ Hooks.once("init", function () {
     CONFIG.STARLINK = STARLINK;
 
     registerModuleData();
+
+    CONFIG.Actor.dataModels = dataModels.actor;
 
     const DocumentSheetConfig = foundry.applications.apps.DocumentSheetConfig;
     DocumentSheetConfig.registerSheet(Actor, "starlink", sheets.Ship, {
