@@ -1,4 +1,15 @@
 {
+  "TYPES": {
+    "Actor": {
+      "ship": "Ship",
+      "character": "Character"
+    },
+    "Item": {
+      "component": "Component",
+      "planet": "Planet",
+      "building": "Building"
+    }
+  },
   "STARLINK.SHIP": {
     "HealthPoints": {
       "label": "Hull Points",

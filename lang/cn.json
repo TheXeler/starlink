@@ -1,4 +1,15 @@
 {
+  "TYPES": {
+    "Actor": {
+      "ship": "舰船",
+      "character": "角色"
+    },
+    "Item": {
+      "component": "组件",
+      "planet": "行星",
+      "building": "建筑"
+    }
+  },
   "STARLINK.SHIP": {
     "HealthPoints": {
       "label": "船体值",
