@@ -27,7 +27,7 @@ Hooks.once("init", function () {
     const DocumentSheetConfig = foundry.applications.apps.DocumentSheetConfig;
     DocumentSheetConfig.unregisterSheet(Actor, "core", foundry.appv1.sheets.ActorSheet);
     DocumentSheetConfig.registerSheet(Actor, "starlink", sheets.Ship, {
-        types: [dict.Ship],
+        types: ["starlink.Ship"],
         makeDefault: true,
         label: "STARLINK.Sheet.Ship"
     });
