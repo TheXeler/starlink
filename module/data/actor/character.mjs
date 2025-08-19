@@ -18,7 +18,6 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel {
         const fields = foundry.data.fields;
 
         return  {
-            ...super.defineSchema(),
             // 角色基本属性
             attributes: new fields.SchemaField({
                 health: new fields.NumberField({

@@ -18,7 +18,6 @@ export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
         const fields = foundry.data.fields;
 
         return {
-            ...super.defineSchema(),
             // 飞船特有属性
             attributes: new fields.SchemaField({
                 hp: new fields.SchemaField({
