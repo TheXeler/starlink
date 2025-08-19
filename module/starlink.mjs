@@ -26,12 +26,12 @@ Hooks.once("init", function () {
     log("Registering sheets...")
     const {Actors, Items} = foundry.documents.collections;
     Actors.registerSheet(CONST.SYSTEM_ID, sheets.Ship, {
-        types: ["starlink.Ship"],
+        types: ["Ship"],
         makeDefault: true,
         label: "STARLINK.Sheet.Ship"
     });
     Actors.registerSheet(CONST.SYSTEM_ID, sheets.Character, {
-        types: ["starlink.Character"],
+        types: ["Character"],
         makeDefault: true,
         label: "STARLINK.Sheet.Character"
     });
