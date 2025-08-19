@@ -3,7 +3,7 @@ import {default as STARLINK} from "./config.mjs"
 import * as sheets from "./sheet/module.mjs"
 import * as dataModels from "./data/module.mjs"
 //import * as documents from "./document/module.mjs"
-import {log, registerModuleData, setupModulePacks} from "./utils.mjs";
+import {log} from "./utils.mjs";
 
 globalThis.starlink = {
     config: STARLINK,
