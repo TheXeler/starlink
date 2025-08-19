@@ -12,7 +12,7 @@ const {
     StringField
 } = foundry.data.fields;
 
-export default class StarshipDataModel extends foundry.abstract.DataModel {
+export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
     /** @inheritdoc */
     static defineSchema() {
         const fields = foundry.data.fields;
