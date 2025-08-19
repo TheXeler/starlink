@@ -1,4 +1,4 @@
-import {default as STARLINK} from "./config.mjs"
+import {STARLINK, CONST} from "./config.mjs"
 
 import * as sheets from "./sheet/module.mjs"
 import * as dataModels from "./data/module.mjs"
@@ -24,18 +24,18 @@ Hooks.once("init", function () {
     //CONFIG.Item.dataModels = dataModels.item;
 
     log("Registering sheets...")
-    const DocumentSheetConfig = foundry.applications.apps.DocumentSheetConfig;
-    DocumentSheetConfig.unregisterSheet(Actor, "core", foundry.appv1.sheets.ActorSheet);
-    DocumentSheetConfig.registerSheet(Actor, "starlink", sheets.Ship, {
+    const {Actors, Items} = foundry.documents.collections;
+    Actors.registerSheet(CONST.SYSTEM_ID, sheets.Ship, {
         types: ["starlink.Ship"],
         makeDefault: true,
         label: "STARLINK.Sheet.Ship"
     });
-    DocumentSheetConfig.registerSheet(Actor, "starlink", sheets.Character, {
+    Actors.registerSheet(CONST.SYSTEM_ID, sheets.Character, {
         types: ["starlink.Character"],
         makeDefault: true,
         label: "STARLINK.Sheet.Character"
     });
 
+    const {DocumentSheetConfig} = foundry.applications.apps;
 
 })

@@ -17,7 +17,8 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         const fields = foundry.data.fields;
 
-        return Object.assign(super.defineSchema(), {
+        return  {
+            ...super.defineSchema(),
             // 角色基本属性
             attributes: new fields.SchemaField({
                 health: new fields.NumberField({
@@ -89,7 +90,7 @@ export default class CharacterDataModel extends foundry.abstract.TypeDataModel {
                     hint: "STARLINK.Character.SkillSlots.Used.Hint"
                 })
             })
-        });
+        };
     }
 
     prepareDerivedData() {

@@ -17,22 +17,41 @@ export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         const fields = foundry.data.fields;
 
-        return Object.assign(super.defineSchema(),{
+        return {
+            ...super.defineSchema(),
             // 飞船特有属性
             attributes: new fields.SchemaField({
-                health: new fields.NumberField({
-                    initial: 10,
-                    integer: true,
-                    min: 0,
-                    label: "STARLINK.Ship.HealthPoints.Label",
-                    hint: "STARLINK.Ship.HealthPoints.Hint"
+                hp: new fields.SchemaField({
+                    value: new fields.NumberField({
+                        initial: 10,
+                        integer: true,
+                        min: 0,
+                        label: "STARLINK.Ship.HealthPoints.Value.Label",
+                        hint: "STARLINK.Ship.HealthPoints.Value.Hint"
+                    }),
+                    max: new fields.NumberField({
+                        initial: 10,
+                        integer: true,
+                        min: 0,
+                        label: "STARLINK.Ship.HealthPoints.Max.Label",
+                        hint: "STARLINK.Ship.HealthPoints.Max.Hint"
+                    })
                 }),
-                shield: new fields.NumberField({
-                    initial: 5,
-                    integer: true,
-                    min: 0,
-                    label: "STARLINK.Ship.ShieldPoints.Label",
-                    hint: "STARLINK.Ship.ShieldPoints.Hint"
+                shield: new fields.SchemaField({
+                    value: new fields.NumberField({
+                        initial: 10,
+                        integer: true,
+                        min: 0,
+                        label: "STARLINK.Ship.Shield.Value.Label",
+                        hint: "STARLINK.Ship.Shield.Value.Hint"
+                    }),
+                    max: new fields.NumberField({
+                        initial: 10,
+                        integer: true,
+                        min: 0,
+                        label: "STARLINK.Ship.Shield.Max.Label",
+                        hint: "STARLINK.Ship.Shield.Max.Hint"
+                    })
                 }),
                 speed: new fields.NumberField({
                     initial: 1,
@@ -67,7 +86,7 @@ export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
                     hint: "STARLINK.Ship.UsedComponents.Hint"
                 })
             })
-        });
+        };
     }
 
     prepareDerivedData() {

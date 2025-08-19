@@ -22,12 +22,24 @@
   "STARLINK": {
     "Ship": {
       "HealthPoints": {
-        "label": "Hull Points",
-        "hint": "Indicates how much damage the hull can withstand"
+        "value": {
+          "label": "Hull Points",
+          "hint": "Indicates how much damage the hull can withstand before being destroyed"
+        },
+        "max": {
+          "label": "Hull Points Max",
+          "hint": "Indicates the maximum hull points of the ship"
+        }
       },
       "ShieldsPoints": {
-        "label": "Shield Points",
-        "hint": "Indicates how much damage the shields can withstand"
+        "value": {
+          "label": "Shield Points",
+          "hint": "Indicates how much damage the shields can withstand before overloading"
+        },
+        "max": {
+          "label": "Shield Points Max",
+          "hint": "Indicates the maximum shield points of the ship"
+        }
       },
       "Speed": {
         "label": "Speed",
@@ -39,11 +51,11 @@
       },
       "ComponentsSlots": {
         "MaxComponents": {
-          "label": "Max Components",
+          "label": "Component Slots Max",
           "hint": "Indicates the maximum amount of components the ship can hold"
         },
         "UsedComponents": {
-          "label": "Used Components",
+          "label": "Component Slots Used",
           "hint": "Indicates the amount of components the ship has installed"
         }
       }

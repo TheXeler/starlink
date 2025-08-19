@@ -22,12 +22,24 @@
   "STARLINK": {
     "Ship": {
       "HealthPoints": {
-        "label": "船体值",
-        "hint": "表示星舰船体能够承受的伤害值"
+        "value": {
+          "label": "船体值",
+          "hint": "表示星舰船体解体前还能够承受的伤害值"
+        },
+        "max": {
+          "label": "船体值上限",
+          "hint": "表示星舰船体值的上限"
+        }
       },
       "ShieldsPoints": {
-        "label": "护盾值",
-        "hint": "表示星舰护盾能够承受的伤害值"
+        "value": {
+          "label": "护盾值",
+          "hint": "表示星舰护盾过载前能够承受的伤害值"
+        },
+        "max": {
+          "label": "护盾值上限",
+          "hint": "表示星舰护盾值的上限"
+        }
       },
       "Speed": {
         "label": "速度",
