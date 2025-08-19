@@ -17,10 +17,7 @@ export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
     static defineSchema() {
         const fields = foundry.data.fields;
 
-        return {
-            // 从父类继承的字段
-            ...super.defineSchema(),
-
+        return Object.assign(super.defineSchema(),{
             // 飞船特有属性
             attributes: new fields.SchemaField({
                 health: new fields.NumberField({
@@ -70,7 +67,7 @@ export default class StarshipDataModel extends foundry.abstract.TypeDataModel {
                     hint: "STARLINK.Ship.UsedComponents.Hint"
                 })
             })
-        };
+        });
     }
 
     prepareDerivedData() {
