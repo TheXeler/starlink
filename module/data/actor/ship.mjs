@@ -1,6 +1,6 @@
 /**
  * The DataModel for a Starship in the custom system.
- * @extends {foundry.abstract.DataModel}
+ * @extends {foundry.abstract.TypeDataModel}
  */
 
 const {

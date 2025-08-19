@@ -1,6 +1,6 @@
 /**
  * The DataModel for a Character in the custom system.
- * @extends {foundry.abstract.DataModel}
+ * @extends {foundry.abstract.TypeDataModel}
  */
 
 const {
