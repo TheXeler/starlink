@@ -1,4 +1,4 @@
-export default class StarshipSheet extends foundry.applications.sheets.ActorSheetV2 {
+export default class StarshipSheet extends foundry.documents.BaseActor {
     get template() {
         return `templates/sheet-actor-ship-${this.isEditable ? "editor" : "view"}.html`;
     }
