@@ -1,1 +1,1 @@
-const STARLINK = {};
+export default {};

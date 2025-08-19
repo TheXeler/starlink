@@ -1,4 +1,4 @@
-import STARLINK from "./config.mjs"
+import {default as STARLINK} from "./config.mjs"
 
 import * as sheets from "./sheet/module.mjs"
 import * as dataModels from "./data/module.mjs"
