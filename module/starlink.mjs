@@ -28,12 +28,12 @@ Hooks.once("init", function () {
     Actors.registerSheet(CONST.SYSTEM_ID, sheets.Ship, {
         types: ["Ship"],
         makeDefault: true,
-        label: "STARLINK.Sheet.Ship"
+        label: "STARLINK.SheetLabel.Ship"
     });
     Actors.registerSheet(CONST.SYSTEM_ID, sheets.Character, {
         types: ["Character"],
         makeDefault: true,
-        label: "STARLINK.Sheet.Character"
+        label: "STARLINK.SheetLabel.Character"
     });
 
     const {DocumentSheetConfig} = foundry.applications.apps;

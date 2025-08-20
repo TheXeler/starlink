@@ -62,7 +62,7 @@
     },
     "Character": {
       "HealthPoints": {
-        "label": "Health",
+        "label": "Health Points",
         "hint": "Indicates the character's health points"
       },
       "Strength": {
@@ -108,6 +108,13 @@
       "Component": "Default component sheet",
       "Planet": "Default planet sheet",
       "Building": "Default building sheet"
+    },
+    "Terms": {
+      "Ship": "Ship",
+      "Character": "Character",
+      "Component": "Component",
+      "Planet": "Planet",
+      "Building": "Building"
     }
   }
 }

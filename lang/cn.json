@@ -102,12 +102,19 @@
         }
       }
     },
-    "Sheet": {
+    "SheetLabel": {
       "Ship": "默认星舰表",
       "Character": "默认角色表",
       "Component": "默认组件表",
       "Planet": "默认行星表",
       "Building": "默认建筑表"
+    },
+    "Terms": {
+      "Ship": "星舰",
+      "Character": "角色",
+      "Component": "组件",
+      "Planet": "行星",
+      "Building": "建筑"
     }
   }
 }
