@@ -1,10 +1,7 @@
-// module/sheet/actor/ship.mjs
-import BaseActorSheet from "./api/base-actor-sheet.mjs";
-
 /**
  * 舰船角色表单
  */
-export default class ShipActorSheet extends BaseActorSheet {
+export default class ShipActorSheet extends foundry.applications.sheets.ActorSheetV2 {
     /** @override */
     static DEFAULT_OPTIONS = {
         classes: ["starlink", "ship", "vertical-tabs"],
