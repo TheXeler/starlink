@@ -1,9 +1,10 @@
 import {STARLINK, CONST} from "./config.mjs"
 
-import * as sheets from "./sheet/module.mjs"
+//import * as sheets from "./sheet/module.mjs"
 import * as dataModels from "./data/module.mjs"
 //import * as documents from "./document/module.mjs"
 import {log} from "./utils.mjs";
+import * as sheets from "./automatic/auto-sheets.mjs";
 
 globalThis.starlink = {
     config: STARLINK,
@@ -25,15 +26,18 @@ Hooks.once("init", function () {
 
     log("Registering sheets...")
     const {Actors, Items} = foundry.documents.collections;
-    Actors.registerSheet(CONST.SYSTEM_ID, sheets.Ship, {
+    sheets.createAllSheets([{
+        sheet: sheets.Ship,
         types: ["Ship"],
         makeDefault: true,
         label: "STARLINK.SheetLabel.Ship"
-    });
-    Actors.registerSheet(CONST.SYSTEM_ID, sheets.Character, {
+    }, {
+        sheet: sheets.Character,
         types: ["Character"],
         makeDefault: true,
         label: "STARLINK.SheetLabel.Character"
+    }]).forEach(sheetInfo => {
+        Actors.registerSheet(CONST.SYSTEM_ID, sheetInfo.class, sheetInfo.config)
     });
 
     const {DocumentSheetConfig} = foundry.applications.apps;

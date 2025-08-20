@@ -3,8 +3,6 @@ export default class CharacterSheet extends foundry.applications.sheets.ActorShe
         return `templates/sheet-actor-character-${this.isEditable ? "editor" : "view"}.html`;
     }
 
-
-
     async getData(options = {}) {
         const context = await super.getData(options);
 
